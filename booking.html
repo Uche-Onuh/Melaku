@@ -37,12 +37,12 @@
 
         <!-- Main Header-->
         <header class="main-header header-style-two">
-        
+
             <!-- Header Top Two-->
             <div class="header-top-two">
                 <div class="auto-container">
                     <div class="clearfix">
-        
+
                         <!--Top Left-->
                         <div class="top-left">
                             <!--social-icon-->
@@ -57,24 +57,25 @@
                                 </ul>
                             </div>
                         </div>
-        
+
                     </div>
-        
+
                 </div>
             </div>
             <!-- Header Top End -->
-        
+
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="auto-container">
                     <div class="clearfix">
-        
+
                         <div class="pull-left logo-outer">
-                            <div class="logo"><a href="index.html"><img src="images/main_logo2.PNG " alt="" title=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="images/main_logo2.PNG " alt=""
+                                        title=""></a></div>
                         </div>
-        
+
                         <div class="pull-right upper-right clearfix">
-        
+
                             <!--Info Box-->
                             <div class="upper-column info-box">
                                 <ul>
@@ -84,7 +85,7 @@
                                     </a>
                                 </ul>
                             </div>
-        
+
                             <!--Info Box-->
                             <div class="upper-column info-box">
                                 <ul>
@@ -94,7 +95,7 @@
                                     </a>
                                 </ul>
                             </div>
-        
+
                             <!--Info Box-->
                             <div class="upper-column info-box">
                                 <ul>
@@ -104,14 +105,14 @@
                                     </a>
                                 </ul>
                             </div>
-        
+
                         </div>
-        
+
                     </div>
                 </div>
             </div>
             <!--End Header Upper-->
-        
+
             <!--Header Lower-->
             <div class="header-lower">
                 <div class="auto-container">
@@ -127,7 +128,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-        
+
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="#">Home</a></li>
@@ -154,16 +155,16 @@
                 </div>
             </div>
             <!--End Header Lower-->
-        
+
             <!--Sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" class="img-responsive" title="Tali"><img src="images/main_logo_small.PNG" alt=""
-                                title=""></a>
+                        <a href="index.html" class="img-responsive" title="Tali"><img src="images/main_logo_small.PNG"
+                                alt="" title=""></a>
                     </div>
-        
+
                     <!--Right Col-->
                     <div class="right-col pull-right">
                         <!-- Main Menu -->
@@ -177,7 +178,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-        
+
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="#">Home</a></li>
@@ -197,11 +198,11 @@
                             </div>
                         </nav><!-- Main Menu End-->
                     </div>
-        
+
                 </div>
             </div>
             <!--End Sticky Header-->
-        
+
         </header>
         <!--End Main Header -->
 
@@ -225,70 +226,56 @@
         </section>
         <!--End Page Title-->
 
+
+
         <!--Donate Section-->
-        <section class="donate-now">
-            <div class="auto-container">
-                <div class="default-form">
-                    <form method="post" action="contact.html">
-                        <div class="row clearfix">
+        <section class="donate-now hero">
+            <div class="auto-container form-box">
 
-                            <!--Left Column-->
-                            <div class="left-column col-md-6 col-sm-12 col-xs-12">
+                <!-- toggle button -->
+
+                <div class="button-box">
+                    <div class="btn-bg" id="btn-bg"></div>
+                    <button type="button" class="toggle-btn" id="events-btn" onclick="events()">Event Planning</button>
+                    <button type="button" class="toggle-btn" id="makeup-btn" onclick="makeup()">Makeup Artistry</button>
+                </div>
+
+                <div class="events-form" id="events">
+                    <form action="post" action="contact.html">
+
+                        <div class="flexbox">
+                            <div class="left-box">
                                 <div class="default-title">
-                                    <h3>DONATION DETAILS</h3>
+                                    <h3>BOOKING DETAILS</h3>
                                 </div>
+
                                 <div class="row clearfix">
-
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">How much would you like to donate?</div>
-                                        <div class="select-amount clearfix">
-                                            <div class="select-box"><input type="radio" name="payment-group"
-                                                    id="radio-one"><label for="radio-one">$10</label></div>
-                                            <div class="select-box"><input type="radio" name="payment-group"
-                                                    id="radio-two"><label for="radio-two">$20</label></div>
-                                            <div class="select-box"><input type="radio" name="payment-group"
-                                                    id="radio-three" checked><label for="radio-three">$50</label></div>
-                                            <div class="select-box"><input type="radio" name="payment-group"
-                                                    id="radio-four"><label for="radio-four">$100</label></div>
-                                            <div class="input-box"><input type="text" name="other-payment" value=""
-                                                    placeholder="Enter Your Amount"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">Would you like to make a regular donation?</div>
-                                        <select class="custom-select-box">
-                                            <option>One Time</option>
-                                            <option>Two Times</option>
-                                            <option>Three Times</option>
-                                            <option>Four Times</option>
-                                            <option>Five Times</option>
+                                        <div class="field-label">Service Needed</div>
+                                        <select class="custom-select-box" name="services" id="custom-select-box1">
+                                            <option disabled selected>Select Service</option>
+                                            <option value="Events Planning">Events Planning</option>
+                                            <option value="Event Co-ordinating">Event Co-ordinating</option>
+                                            <option value="Vendor Sourcing">Vendor Sourcing</option>
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">Card Number</div>
-                                        <input type="text" name="field-name" value="" placeholder="" required>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">DATE</div>
+                                        <input type="date" name="field-name" value="" placeholder="" required>
                                     </div>
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">MM/YY</div>
-                                        <input type="text" name="field-name" value="" placeholder="" required>
+                                        <div class="field-label">TIME</div>
+                                        <input type="time" name="field-name" value="" placeholder="" required>
                                     </div>
-
-                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">CVC</div>
-                                        <input type="text" name="field-name" value="" placeholder="" required>
-                                    </div>
-
                                 </div>
-
                             </div>
 
-                            <!--Right Column-->
-                            <div class="right-column col-md-6 col-sm-12 col-xs-12">
+                            <div class="right-box">
                                 <div class="default-title">
-                                    <h3>DONOR DETAILS</h3>
+                                    <h3>CUSTOMER DETAILS</h3>
                                 </div>
+
                                 <div class="row clearfix">
 
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
@@ -301,13 +288,13 @@
                                     </div>
 
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">Email *</div>
+                                        <div class="field-label">Email*</div>
                                         <input type="email" name="field-name" value="" placeholder="" required>
                                     </div>
 
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                         <div class="field-label">Phone</div>
-                                        <input type="email" name="field-name" value="" placeholder="">
+                                        <input type="number" name="field-name" value="" placeholder="">
                                     </div>
 
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -316,133 +303,212 @@
                                     </div>
 
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <button type="submit" class="theme-btn btn-style-one">Submit Donation</button>
+                                        <button type="submit" class="theme-btn btn-style-one">Submit Booking</button>
                                     </div>
 
                                 </div>
-
                             </div>
-
                         </div>
                     </form>
 
                 </div>
+
+                <div class="makeup-form" id="makeup">
+                    <form action="post" action="contact.html">
+
+                        <div class="flexbox">
+                            <div class="left-box">
+                                <div class="default-title">
+                                    <h3>BOOKING DETAILS</h3>
+                                </div>
+
+                                <div class="row clearfix">
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="field-label">Service Needed</div>
+                                        <select class="custom-select-box" name="services" id="custom-select-box2">
+                                            <option disabled selected>Select Service</option>
+                                            <option value="Pre-Wedding Makeup">Pre-Wedding Makeup</option>
+                                            <option value="Bridal Makeup">Bridal Makeup</option>
+                                            <option value="Bridal Shower">Bridal Shower</option>
+                                            <option value="Traditional Wedding Makeup">Traditional Wedding Makeup</option>
+                                            <option value="Birthday Glam">Birthday Glam</option>     
+                                            <option value="Wedding Guests">Wedding Guests</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Date</div>
+                                        <input type="date" name="field-name" placeholder="" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Time</div>
+                                        <input type="time" name="field-name" placeholder="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-box">
+                                <div class="default-title">
+                                    <h3>CUSTOMER DETAILS</h3>
+                                </div>
+
+                                <div class="row clearfix">
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">First Name *</div>
+                                        <input type="text" name="field-name" placeholder="" required>
+                                    </div>
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Last Name</div>
+                                        <input type="text" name="field-name" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Email*</div>
+                                        <input type="email" name="field-name" placeholder="" required>
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Phone</div>
+                                        <input type="number" name="field-name" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <div class="field-label">Address</div>
+                                        <textarea name="field-name" placeholder=""></textarea>
+                                    </div>
+
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button type="submit" class="theme-btn btn-style-one">Submit Booking</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
             </div>
-        </section>
-        <!--End Donate Section-->
 
-      
 
-        <!--Footer Style Two-->
-        <footer class="footer-style-two">
+    </div>
+    </section>
+    <!--End Donate Section-->
+
+
+
+    <!--Footer Style Two-->
+    <footer class="footer-style-two">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+
+                    <!--big column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    </div>
+                                    <div class="text">As a company founded on providing quality service, we
+                                        continuously aim to satisfy you, our clients with top notch services in a
+                                        comfortable and light environment.</div>
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget product-widget">
+                                    <h2>Our Services</h2>
+                                    <ul class="product-list">
+                                        <li><a href="#">Event Planner</a></li>
+                                        <li><a href="#">Bridals</a></li>
+                                        <li><a href="#">Other Makeup</a></li>
+                                        <li><a href="#">Makeup Training</a></li>
+                                        <li><a href="#">Product Sales</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--big column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-7 col-sm-7 col-xs-12">
+                                <div class="footer-widget news-widget style-two">
+                                    <h2 class="info1">Useful Info</h2>
+
+                                    <h4 class="info2">Opening Hours</h4>
+                                    <ul class="infos">
+                                        <li>
+                                            <i class="fa-solid fa-clock"></i>
+                                            Monday - Friday : 8am - 5pm
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-clock"></i>
+                                            Saturday - Sunday : 7am - 5pm
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="theme-btn btn-style-five">Book Now</a>
+
+
+                                </div>
+                            </div>
+
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-5 col-sm-5 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Useful Link</h2>
+                                    <ul class="links">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Message on Whatsapp</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Contact us </a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
             <div class="auto-container">
-                <!--Widgets Section-->
-                <div class="widgets-section">
-                    <div class="row clearfix">
-
-                        <!--big column-->
-                        <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                            <div class="row clearfix">
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                    <div class="footer-widget logo-widget">
-                                        <div class="logo">
-                                            <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
-                                        </div>
-                                        <div class="text">As a company founded on providing quality service, we
-                                            continuously aim to satisfy you, our clients with top notch services in a
-                                            comfortable and light environment.</div>
-                                    </div>
-                                </div>
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                    <div class="footer-widget product-widget">
-                                        <h2>Our Services</h2>
-                                        <ul class="product-list">
-                                            <li><a href="#">Event Planner</a></li>
-                                            <li><a href="#">Bridals</a></li>
-                                            <li><a href="#">Other Makeup</a></li>
-                                            <li><a href="#">Makeup Training</a></li>
-                                            <li><a href="#">Product Sales</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!--big column-->
-                        <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                            <div class="row clearfix">
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-7 col-sm-7 col-xs-12">
-                                    <div class="footer-widget news-widget style-two">
-                                        <h2 class="info1">Useful Info</h2>
-
-                                        <h4 class="info2">Opening Hours</h4>
-                                        <ul class="infos">
-                                            <li>
-                                                <i class="fa-solid fa-clock"></i>
-                                                Monday - Friday : 8am - 5pm
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-clock"></i>
-                                                Saturday - Sunday : 7am - 5pm
-                                            </li>
-                                        </ul>
-
-                                        <a href="#" class="theme-btn btn-style-five">Book Now</a>
-
-
-                                    </div>
-                                </div>
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-5 col-sm-5 col-xs-12">
-                                    <div class="footer-widget links-widget">
-                                        <h2>Useful Link</h2>
-                                        <ul class="links">
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Message on Whatsapp</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Contact us </a></li>
-                                            <li><a href="#">Gallery</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
+                <div class="row clearfix">
+                    <div class="column col-md-6 col-sm-8 col-xs-12">
+                        <div class="copyright">Copyright &copy; 2022 Make up by Melaku. All rights reserved</div>
                     </div>
-                </div>
-
-            </div>
-            <!--Footer Bottom-->
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="row clearfix">
-                        <div class="column col-md-6 col-sm-8 col-xs-12">
-                            <div class="copyright">Copyright &copy; 2022 Make up by Melaku. All rights reserved</div>
-                        </div>
-                        <div class="social-column col-md-6 col-sm-4 col-xs-12">
-                            <ul class="social-icon-one style-two">
-                                <li><a href="https://www.facebook.com/melakumercy/" target="_blank"><span
-                                            class="fa fa-facebook"></span></a></li>
-                                <li><a href="https://twitter.com/melakumercy" target="_blank"><span
-                                            class="fa fa-twitter"></span></a></li>
-                                <li><a href="https://www.instagram.com/mercymelaku/" target="_blank"><span
-                                            class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
+                    <div class="social-column col-md-6 col-sm-4 col-xs-12">
+                        <ul class="social-icon-one style-two">
+                            <li><a href="https://www.facebook.com/melakumercy/" target="_blank"><span
+                                        class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://twitter.com/melakumercy" target="_blank"><span
+                                        class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.instagram.com/mercymelaku/" target="_blank"><span
+                                        class="fa fa-instagram"></span></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!--Footer Style Two-->
+        </div>
+    </footer>
+    <!--Footer Style Two-->
 
     </div>
     <!--End pagewrapper-->
@@ -450,7 +516,28 @@
     <!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
+    <script>
+        var y = document.getElementById("makeup");
+        var x = document.getElementById("events");
+        var z = document.getElementById("btn-bg");
+        var q = document.getElementById("events-btn");
+        var r = document.getElementById("makeup-btn")
+        function makeup() {
+            x.style.left = "-200%"
+            y.style.left = "0"
+            z.style.left = "250px"
+            r.style.color = "#fff"
+            q.style.color = "#ccc"
+        }
 
+        function events() {
+            x.style.left = "0"
+            y.style.left = "200%"
+            z.style.left = "0px"
+            r.style.color = "#ccc"
+            q.style.color = "#fff"
+        }
+    </script>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
